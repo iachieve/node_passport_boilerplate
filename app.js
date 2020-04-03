@@ -6,8 +6,10 @@ const flash = require('connect-flash');
 const session = require('express-session');
 const PORT = process.env.PORT || 5000;
 
-const dotenv = require('dotenv');
-dotenv.config();
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config()
+}
+
 
 const app = express();
 

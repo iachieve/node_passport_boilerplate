@@ -17,3 +17,5 @@
   - fontawesome
 ## Host
   - Heroku
+## Env Variables
+  - mongoURI=XXXXXX-XXXXXXXXXXX-XXXXXX
